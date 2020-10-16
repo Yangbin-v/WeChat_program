@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/set/sets"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#4876FF",
+    "navigationBarTitleText": "杨孝彬的测试程序",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的商店",
+        "iconPath": "images/store_no.png",
+        "selectedIconPath": "images/商店_ing.png"
+      },
+      {
+        "pagePath": "pages/set/sets",
+        "text": "我的订单",
+        "iconPath": "images/订单_no.png",
+        "selectedIconPath": "images/订单_ing.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "账户信息",
+        "iconPath": "images/设置_no.png",
+        "selectedIconPath": "images/设置_ing.png"
+      }
+    ],
+    "color": "#000000",
+    "selectedColor": "#FFA500"
+  },
+  "sitemapLocation": "sitemap.json"
+}
