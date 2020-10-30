@@ -1,0 +1,83 @@
+<!--index.wxml-->
+<view class="page">
+  <view class="header">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 点击登录 </button>
+    <block wx:else>
+      <view class="user-frame">
+        <image bindtap="Tosetpath" src="/images/userhead_frame.png" class="userhead_frame"></image>
+        <image class="userinfo-avatar" lazy-load='true' src="{{userInfo.avatarUrl}}" mode="aspectFill"></image>
+      </view>
+      <view class="user-name">
+        <text class="userinfo-nickname">小伙伴：{{userInfo.nickName}}</text>
+      </view>
+    </block> 
+    <image src='/images/wave.gif' mode='scaleToFill' class='gif-wave'></image>
+  </view>
+  <view class="ware-title">
+    <text class="warehouse">-趣联的秘密仓库-</text>
+  </view>
+  <view class="ware-page">
+    <view class="ware-page1">
+      <image class="ware-image1" src="/images/warehouse.png"></image>
+      <text class="ware-admin">仓库管理</text>
+    </view>
+    <view class="ware-page2">
+      <image class="ware-image2" src="/images/ware-inout.png"></image>
+      <text class="ware-in-out">商品出入库</text>
+    </view>
+  </view>
+  <view class="line-one">
+  </view>
+  <view class="goods-title">
+    <text class="goods">-多拉爱梦的货架-</text>
+  </view>
+  <view class="goods-page-one">
+    <view class="goods-page1">
+      <image class="goods-image1" src="/images/goods_shelves.png"></image>
+      <text class="goods-admin">货架管理</text>
+    </view>
+    <view class="goods-page2">
+      <image class="goods-image2" src="/images/goods.png"></image>
+      <text class="goods-in-out">商品管理</text>
+    </view>
+    <view class="goods-page3">
+      <image class="goods-image3" src="/images/goods_add.png"></image>
+      <text class="goods-add">上架/补货</text>
+    </view>
+  </view>
+  <view class="goods-page-two">
+    <view class="goods-page4">
+      <image class="goods-image4" src="/images/goods_stock.png"></image>
+      <text class="goods-stock">货架库存</text>
+    </view>
+    <view class="goods-page5">
+      <image class="goods-image5" src="/images/goods_off.png"></image>
+      <text class="goods-off">商品下架</text>
+    </view>
+    <view class="goods-page6">
+      <image class="goods-image6" src="/images/goods_check.png"></image>
+      <text class="goods-check">库存盘点</text>
+    </view>
+  </view>
+  <view class="line-two">
+  </view>
+  <view class="welfare-title">
+    <text class="welfare">-葛朗台的红包-</text>
+  </view>
+  <view class="welfare-page-one">
+    <view class="welfare-page1">
+      <image class="welfare-image1" src="/images/welfare_member.png"></image>
+      <text class="welfare-member">会员管理</text>
+    </view>
+    <view class="welfare-page2">
+      <image class="welfare-image2" src="/images/welfare_coupon.png"></image>
+      <text class="welfare-coupon">优惠券</text>
+    </view>
+    <view class="welfare-page3">
+      <image class="welfare-image3" src="/images/welfare_recharge.png"></image>
+      <text class="welfare-recharge">充值管理</text>
+    </view>
+  </view>
+  <view class="welfare-page-two">
+  </view>
+</view>

@@ -1,0 +1,5 @@
+/* pages/set/sets.wxss */
+.KDY {
+  width: 200rpx;
+  height:200rpx;
+}
