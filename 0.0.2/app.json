@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/staff/staff",
+    "pages/data/data",
+    "pages/set/set"
+  ],
+  "entryPagePath": "pages/index/index",
+  "window": {
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#FF3030",
+    "navigationBarTitleText": "趣联小助手",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "管理盒子",
+        "iconPath": "images/盒子_no.png",
+        "selectedIconPath": "images/盒子_ing.png"
+      },
+      {
+        "pagePath": "pages/data/data",
+        "text": "查看订单",
+        "iconPath": "images/订单_no.png",
+        "selectedIconPath": "images/订单_ing.png"
+      },
+      {
+        "pagePath": "pages/staff/staff",
+        "text": "人员管理",
+        "iconPath": "images/设置_no.png",
+        "selectedIconPath": "images/设置_ing.png"
+      }
+    ],
+    "color": "#000000",
+    "selectedColor": "#FF0000"
+  },
+  "sitemapLocation": "sitemap.json"
+}

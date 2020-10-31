@@ -1,0 +1,56 @@
+<!--pages/set/sets.wxml-->
+<view class="page">
+  <view class="header">
+    <view class="weather">
+      <image class="butoon-image" src="/images/sun.png"></image>
+      <view class="image-text">天气：多云</view>
+    </view>
+  </view>
+  <view class="fenge"></view>
+  <view class="title-text">-数据分析-</view>
+  <view class="line">
+    <view class="line-image">
+      <view class="image-don">
+        <image class="butoon-image" src="/images/transaction_analysis.png"></image>
+      </view>
+      <view class="image-don">
+        <image class="butoon-image" src="/images/goods_analysis.png"></image>
+      </view>
+      <view class="image-don">
+        <image class="butoon-image" src="/images/ware_analysis.png"></image>
+      </view>
+      <view class="image-don">
+        <image class="butoon-image" src="/images/men_analysis.png"></image>
+      </view>
+    </view>
+    <view class="line-text">
+      <view class="image-text">交易分析</view>
+      <view class="image-text">商品分析</view>
+      <view class="image-text">货架分析</view>
+      <view class="image-text">顾客分析</view>
+    </view>
+  </view>
+  <view class="title-text">-订单统计-</view>
+  <view class="line">
+    <view class="line-image">
+      <view class="image-don">
+        <image class="butoon-image" src="/images/ware_order.png"></image>
+      </view>
+      <view class="image-don">
+        <image class="butoon-image" src="/images/request_order.png"></image>
+      </view>
+      <view class="image-don">
+        <image class="butoon-image" src="/images/takeout_order.png"></image>
+      </view>
+      <view class="image-don">
+        <image class="butoon-image" src=""></image>
+      </view>
+    </view>
+    <view class="line-text">
+      <view class="image-text">货架订单</view>
+      <view class="image-text">补货申请</view>
+      <view class="image-text">外卖订单</view>
+      <view class="image-text">待定模块</view>
+    </view>
+  </view>
+</view>

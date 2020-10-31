@@ -1,0 +1,43 @@
+<!--pages/staff/staff.wxml-->
+<view class="page">
+  <view class="header">
+    <swiper indicator-dots='true' indicator-color='write' indicator-active-color='black' autoplay='true' class="swper">
+    <swiper-item>
+      <image class="imageitem" src='/images/mouse.png'></image>
+    </swiper-item>
+    <swiper-item>
+      <image class="imageitem" src='/images/dragon.png'></image>
+    </swiper-item>
+    <swiper-item>
+      <image class="imageitem" src='/images/cow.png'></image>
+    </swiper-item>
+    <swiper-item>
+      <image class="imageitem" src='/images/horse.png'></image>
+    </swiper-item>
+  </swiper>
+  </view>
+  <view class="fenge"></view>
+  <view class="title-text">-人员管理-</view>
+  <view class="line">
+    <view class="line-image">
+      <view class="image-don">
+        <image class="butoon-image" src="/images/man.png"></image>
+      </view>
+      <view class="image-don">
+        <image class="butoon-image" src="/images/salary.png"></image>
+      </view>
+      <view class="image-don">
+        <image class="butoon-image" src="/images/works.png"></image>
+      </view>
+      <view class="image-don">
+        <image class="butoon-image" src="/images/notice.png"></image>
+      </view>
+    </view>
+    <view class="line-text">
+      <view class="image-text">员工管理</view>
+      <view class="image-text">工作情况</view>
+      <view class="image-text">工资详情</view>
+      <view class="image-text">内部公告</view>
+    </view>
+  </view>
+</view>
