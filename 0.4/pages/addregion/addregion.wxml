@@ -1,0 +1,86 @@
+<!--pages/addregion/addregion.wxml-->
+<view class="page">
+  <form catchsubmit="backvalue">
+  <view class="waredata">
+    <view class="line">
+      <view class="line-text">
+        <view class="must">
+          <text class="must-text">*</text>
+        </view>
+        <text class="title-text">区域名称</text>
+      </view>
+      <view class="line-input">
+        <input class="user-input" placeholder="填写区域名称" name="name"/>
+      </view>
+    </view>
+    <view class="line">
+      <view class="line-text">
+        <view class="must">
+          <text class="must-text">*</text>
+        </view>
+        <text class="title-text">地址</text>
+      </view>
+      <view class="line-input">
+        <input class="user-input" placeholder="填写地址" name="addr"/>
+      </view>
+    </view>
+  </view>
+  <view class="wareman">
+    <view class="line">
+      <view class="line-text">
+        <view class="must">
+          <text class="must-text">*</text>
+        </view>
+        <text class="title-text">联系人</text>
+      </view>
+      <view class="line-input">
+        <input class="user-input" placeholder="填写联系人" name="manmager"/>
+      </view>
+    </view>
+    <view class="line">
+      <view class="line-text">
+        <view class="must">
+          <text class="must-text">*</text>
+        </view>
+        <text class="title-text">联系方式</text>
+      </view>
+      <view class="line-input">
+        <input class="user-input" placeholder="填写联系方式" type="number" name="phone"/>
+      </view>
+    </view>
+    <view class="line">
+      <view class="line-text">
+        <view class="must">
+        </view>
+        <text class="title-text">微信号</text>
+      </view>
+      <view class="line-input">
+        <input class="user-input" placeholder="填写微信号" name="wechat"/>
+      </view>
+    </view>
+    <view class="line">
+      <view class="line-text">
+        <view class="must">
+        </view>
+        <text class="title-text">备注</text>
+      </view>
+      <view class="line-input">
+        <input class="user-input" placeholder="填写备注" name="note"/>
+      </view>
+    </view>
+  </view>
+  <view class="start_no">
+    <view class="line">
+      <view class="line-text">
+        <view class="must">
+        </view>
+        <text class="title-text">启用</text>
+      </view>
+      <view class="line-switch">
+        <switch checked="true" name="flag"/>
+      </view>
+    </view>
+  </view>
+  <button class="sentbutton" type="primary" formType="submit">点击添加</button>
+</form>
+</view>
