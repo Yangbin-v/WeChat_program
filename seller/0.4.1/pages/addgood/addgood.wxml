@@ -1,0 +1,84 @@
+<!--pages/addgood/addgood.wxml-->
+<view class="page">
+  <form catchsubmit="backvalue">
+  <view class="waredata">
+    <view class="line">
+      <view class="line-text">
+        <view class="must">
+          <text class="must-text">*</text>
+        </view>
+        <text class="title-text">商品名称</text>
+      </view>
+      <view class="line-input">
+        <input class="user-input" placeholder="填写名称" name="name"/>
+      </view>
+    </view>
+    <view class="line">
+      <view class="line-text">
+        <view class="must">
+        </view>
+        <text class="title-text">条码</text>
+      </view>
+      <view class="line-input">
+        <input class="user-input" placeholder="填写条码" name="barcode"/>
+      </view>
+    </view>
+    <view class="line">
+      <view class="line-text">
+        <view class="must">
+          <text class="must-text">*</text>
+        </view>
+        <text class="title-text">种类</text>
+      </view>
+      <view class="line-input">
+        <picker class="user-input" bindchange="kindchange" range="{{array}}" name="category">-{{category}}-</picker>
+      </view>
+    </view>
+  </view>
+  <view class="wareman">
+    <view class="line">
+      <view class="line-text">
+        <view class="must">
+          <text class="must-text">*</text>
+        </view>
+        <text class="title-text">成本价</text>
+      </view>
+      <view class="line-input">
+        <input class="user-input" placeholder="填写成本价" type="number" name="price"/>
+      </view>
+    </view>
+    <view class="line">
+      <view class="line-text">
+        <view class="must">
+          <text class="must-text">*</text>
+        </view>
+        <text class="title-text">销售价</text>
+      </view>
+      <view class="line-input">
+        <input class="user-input" placeholder="填写销售价" type="number" name="buy"/>
+      </view>
+    </view>
+    <view class="line">
+      <view class="line-text">
+        <view class="must">
+        </view>
+        <text class="title-text">图片</text>
+      </view>
+      <view class="line-input">
+        <image class="goodimage" bindtap="upgoodimage" src="{{imageurl}}"/>
+      </view>
+    </view>
+    <view class="line">
+      <view class="line-text">
+        <view class="must">
+        </view>
+        <text class="title-text">备注</text>
+      </view>
+      <view class="line-input">
+        <input class="user-input" placeholder="填写备注" name="note"/>
+      </view>
+    </view>
+  </view>
+  <button class="sentbutton" type="primary" formType="submit">点击添加</button>
+</form>
+</view>

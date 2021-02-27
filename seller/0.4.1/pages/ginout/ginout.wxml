@@ -1,0 +1,14 @@
+<!--pages/ginout/ginout.wxml-->
+<view wx:for="{{wareresult}}" wx:for-item="i" wx:key="this" bindtap="Towareinoutpath" data-post="{{i}}">
+  <view class="warepage" wx:if="{{i.flag}}">
+    <image src="cloud://test-6gbfgwps390db2f7.7465-test-6gbfgwps390db2f7-1304095356/iconimage/仓库.png" class="wareimage"></image>
+    <view class="waretext">
+      <text class="name">{{i.name}}</text>
+      <text class="addr">{{i.addr}}</text>
+    </view>
+    <view class="flag">
+      <text class="flaging">管理商品</text>
+      <image src="cloud://test-6gbfgwps390db2f7.7465-test-6gbfgwps390db2f7-1304095356/iconimage/箭头.png" class="to"></image>
+    </view>
+  </view>
+</view>
