@@ -1,0 +1,257 @@
+/* pages/goodmanage/goodmanage.wxss */
+.title {
+  top: 0;
+  height: 100rpx;
+  width: 100%;
+  border-bottom: 1rpx solid #e2e2e7;
+  margin-bottom: 10rpx;
+  display: flex;
+  position: fixed;
+  background-color: #ffffff;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.qqq {
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+}
+.t1 {
+  font-size: 25rpx;
+  font-weight: 400;
+  color: brown;
+}
+.t2 {
+  font-size: 25rpx;
+  font-weight: 400;
+  color: black;
+}
+.search {
+  top: 110rpx;
+  height: 80rpx;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  background-color: #ffffff;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.searchpage {
+  height: 75rpx;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10rpx;
+  box-shadow: 0rpx 2rpx 10rpx -2rpx #a09e9e;
+  justify-content: space-around;
+  align-items: center;
+}
+.searchimage {
+  height: 30rpx;
+  width: 30rpx;
+}
+.searchinput {
+  height: 25rpx;
+  width: 500rpx;
+}
+.delete {
+  height: 30rpx;
+  width: 30rpx;
+}
+.scan {
+  height: 60rpx;
+  width: 60rpx;
+}
+.goodspage {
+  height: 150rpx;
+  width: 100%;
+  border-bottom: 1rpx solid #e2e2e7;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.aaa {
+  height: 100%;
+  width: 8%;
+}
+.goodsimage {
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 10rpx;
+  border: 2rpx solid #dddde0;
+}
+.goodsdata{
+  height: 100%;
+  width: 180rpx;
+  margin: 0 20rpx;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.goodsname {
+  height: 50rpx;
+  width: 100%;
+}
+.goodsprice {
+  height: 70rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.goodsnametext {
+  font-size: 25rpx;
+  font-weight: 400;
+}
+.goodspricetext {
+  font-size: 18rpx;
+  font-weight: 200;
+}
+.goodsdata_ {
+  height: 100%;
+  width: 200rpx;
+  margin: 0 20rpx;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.editor {
+  height: 100%;
+  width: 100rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.button {
+  height: 40rpx;
+  width: 80rpx;
+  display: flex;
+  border-radius: 20rpx;
+  border: 2rpx solid #e0e2e0;
+  justify-content: center;
+  align-items: center;
+}
+.buttontext {
+  font-size: 20rpx;
+  font-weight: 200;
+}
+.kindpage {
+  height: 80rpx;
+  width: 100%;
+  border-bottom: 1rpx solid #e2e2e7;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.kindname {
+  font-size: 30rpx;
+  font-weight: 400;
+}
+._delete {
+  height: 80rpx;
+  width: 80rpx;
+}
+.kinddata {
+  height: 80rpx;
+  width: 300rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+.jian {
+  height: 60rpx;
+  width: 60rpx;
+}
+.anniu {
+  width: 100%;
+  margin: 20rpx 0;
+  display: flex;
+  position: fixed;
+  justify-content: space-around;
+  align-items: center;
+  bottom: 0;
+}
+.addware{
+  width: 60%;
+}
+.toppage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.windows {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  width: 60%;
+  padding: 15rpx;
+  border-radius: 10rpx;
+  background-color: #fbfbfd;
+  box-shadow: 0rpx 2rpx 10rpx -2rpx #e0dfdf;
+}
+.qux {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.xian {
+  width: 100%;
+  height: 2rpx;
+  background-color: rgb(199, 194, 194);
+}
+.bbb {
+  width: 100%;
+  height: 80rpx;
+}
+.numdata {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.quxtext {
+  font-size: 30rpx;
+  font-weight: 400;
+}
+.quximage {
+  width: 30rpx;
+  height: 30rpx;
+}
+.numberinput {
+  width: 200rpx;
+  height: 45rpx;
+  border-radius: 10rpx;
+  box-shadow: 0rpx 2rpx 10rpx -2rpx #a09e9e inset;
+  border:1rpx solid rgb(165, 161, 161);
+}
+.yesbutton {
+  width: 250rpx;
+}
+.ccc {
+  height: 200rpx;
+  width: 100%;
+}
+.ddd {
+  height: 110rpx;
+  width: 100%;
+}
+.notice {
+  width: 100%;
+  height: 20rpx;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+.noticetext {
+  font-size: 18rpx;
+  font-weight: 300;
+}

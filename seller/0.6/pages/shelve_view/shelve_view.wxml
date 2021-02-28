@@ -1,0 +1,72 @@
+<!--pages/shelve_view/shelve_view.wxml-->
+<view class="title">
+  <picker mode="multiSelector" bindchange="bindPickerChange"   
+    bindcolumnchange="bindPickerColumnChange" 
+    value="{{customIndex}}" range="{{array}}" class="inputpage">
+    <view class="qqq">
+    <text class="t2">选择货架</text>
+    <text class="t1">▼</text>
+    <text class="t1">{{inregion}}-{{inshelve}}</text>
+  </view>
+  </picker>
+</view>
+<view class="title_">
+  <view class="qqq">
+    <text class="t2">货架库存量</text>
+    <text class="t1">{{shelve_goods_sum}}</text>
+  </view>
+  <view class="fenge"></view>
+  <view class="qqq">
+    <text class="t2">货架库存总额</text>
+    <text class="t1">￥{{shelve_goods_buy}}-￥{{shelve_goods_value}}</text>
+  </view>
+  <view class="fenge"></view>
+  <view class="qqq">
+    <text class="t2">货架零库存数</text>
+    <text class="t1">{{shelve_goods_0}}</text>
+  </view>
+</view>
+<view class="bbb"></view>
+<view wx:for="{{goods}}" wx:for-item="i" wx:key="this">
+  <view class="goodspage">
+    <image class="goodsimage" src="{{i.url}}"></image>
+    <view class="goodsdata">
+      <view class="goodsname">
+        <text class="goodsnametext">{{i.name}}</text>
+      </view>
+      <view class="goodsprice">
+        <text class="goodspricetext">成本价：￥{{i.price}}</text>
+        <text class="goodspricetext">销售价：￥{{i.buy}}</text>
+        <text class="goodspricetext">数量：{{i.nownumber}}</text>
+      </view>
+    </view>
+    <view class="goodsdata_">
+      <view class="goodsname">
+        <text class="goodsnametext">种类：{{i.category}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="bbb"></view>
+<view class="nogoods" wx:if="{{!goods.length}}">
+  <image class="nogoodsimage" src="cloud://test-6gbfgwps390db2f7.7465-test-6gbfgwps390db2f7-1304095356/iconimage/搜索无结果.png"/>
+  <text class="nogoodstext">无商品 请添加</text>
+  <view class="addgoodsanniu" bindtap="Toshelvepath">
+      <text class="addgoodsanniutext">添加商品</text>
+    </view>
+</view>
+<view class="operation">
+  <view class="goodsinshelves">
+    <view class="ddd"></view>
+    <text class="goodspricetext">不显示零库存</text>
+    <view class="delshelvesanniu">
+      <switch class="swith" checked="{{switchflag_1}}" bindchange="switch_1" />
+    </view>
+    <view class="ddd"></view>
+    <text class="goodspricetext">只显示零库存</text>
+    <view class="inshelvesanniu">
+      <switch class="swith" checked="{{switchflag_2}}" bindchange="switch_2" />
+    </view>
+    <view class="ddd"></view>
+  </view>
+</view>
