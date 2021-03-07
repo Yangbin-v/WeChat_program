@@ -1,0 +1,49 @@
+<!--pages/shelve_Inventory/shelve_Inventory.wxml-->
+<view class="title">
+  <picker mode="multiSelector" bindchange="bindPickerChange"   
+    bindcolumnchange="bindPickerColumnChange" 
+    value="{{customIndex}}" range="{{array}}" class="inputpage">
+    <view class="qqq">
+    <text class="t2">选择货架</text>
+    <text class="t1">▼</text>
+    <text class="t1">{{inregion}}-{{inshelve}}</text>
+  </view>
+  </picker>
+</view>
+
+<view class="page">
+  <view class="aaa"></view>
+  <view wx:for="{{datas}}" wx:for-item="i" class="detailpage" wx:key="this1">
+    <view class="date">
+      <text class="datetxt">--{{i.due}}</text>
+      <text class="note">货架:{{i.shelve.region_name}}-{{i.shelve.name}}</text>
+      <text class="t1">备注：{{i.note}}</text>
+    </view>
+    <view class="datapage">
+      <view class="manpage">
+        <image class="manimage" src="{{i.manimage}}"></image>
+        <text class="manname">操作人员:{{i.man}}</text>
+      </view>
+      <view class="inventory">
+      <view wx:if="{{i.inventory_buy<0}}">
+        <text class="datetxt">损失：</text>
+        <text class="inventory_red">￥{{i.inventory_buy}}</text>
+      </view>
+      <view wx:else>
+        <text class="datetxt">损失：</text>
+        <text class="inventory_greed">￥{{i.inventory_buy}}</text>
+      </view>
+    </view>
+      <view class="hidepage"  bindtap="Toinventorydetail" data-i="{{i}}">
+        <text class="note">详情</text>
+        <text class="note">▶</text>
+      </view>
+  </view>
+</view>
+  <view class="aaa"></view>
+</view>
+
+<view class="anniu">
+  <button class="outgoods" type="warn" bindtap="Toinventory">新增盘点</button>
+</view>
+

@@ -1,0 +1,101 @@
+<!--pages/wareinout/wareinout.wxml-->
+<text class="name">-{{ware.name}}</text>
+<view class="search">
+  <view class="searchpage">
+    <image class="searchimage" src="cloud://test-6gbfgwps390db2f7.7465-test-6gbfgwps390db2f7-1304095356/iconimage/搜索.png"></image>
+    <input class="searchinput" value="{{inputvalue}}" bindinput="inputsearch" confirm-type="search" placeholder="搜索商品或条形码" placeholder-style="font-size: 20rpx"/>
+    <image class="delete" src="/images/delete.png" wx:if="{{inputvalue}}" bindtap="delete"></image>
+    <image class="scan" src="cloud://test-6gbfgwps390db2f7.7465-test-6gbfgwps390db2f7-1304095356/iconimage/条码扫描.png" bindtap="phonescan"></image>
+  </view>
+</view>
+<view class="title">
+    <view class="waretext">
+      <text class="screen">筛选 |</text>
+    </view>
+</view>
+<view class="bbb"></view>
+<view wx:for="{{goods}}" wx:for-item="i" wx:key="this">
+  <view class="goodspage">
+    <view class="select">
+      <checkbox-group class="checkcss" bindchange="checkchange" data-post="{{i}}">
+        <checkbox value="cb" checked="{{Ischeck}}" />
+      </checkbox-group>
+    </view>
+    <image class="goodsimage" src="{{i.url}}"></image>
+    <view class="goodsdata">
+      <view class="goodsname">
+        <text class="goodsnametext">{{i.name}}</text>
+      </view>
+      <view class="goodsprice">
+        <text class="goodspricetext">成本价：￥{{i.price}}</text>
+        <text class="goodspricetext">销售价：￥{{i.buy}}</text>
+        <text class="goodspricetext">数量：{{i.ware[ware['_id']]}}</text>
+      </view>
+    </view>
+    <view class="goodsdata_">
+      <view class="goodsname">
+        <text class="goodsnametext">种类：{{i.category}}</text>
+      </view>
+    </view>
+    <view class="editor">
+      <view class="button" bindtap="ftoppage" data-good="{{i}}">
+        <text class="buttontext">编辑</text>
+      </view>
+    </view>
+    </view>
+</view>
+<view class="notice">
+      <text class="noticetext">~我是有底线的~</text>
+</view>
+<view class="bbb"></view>
+<view class="nogoods" wx:if="{{!goods.length}}">
+  <image class="nogoodsimage" src="cloud://test-6gbfgwps390db2f7.7465-test-6gbfgwps390db2f7-1304095356/iconimage/搜索无结果.png"/>
+  <text class="nogoodstext">无商品 请添加</text>
+  <view class="addgoodsanniu" bindtap="Toeditgooodspath">
+      <text class="addgoodsanniutext">添加商品</text>
+    </view>
+</view>
+<view class="operation">
+  <view class="goodsinshelves">
+    <view class="ddd"></view>
+    <checkbox value="quanxuna" checked="{{ischeckall}}" bindtap="checkall"/>
+    <text class="buttontext">全选</text>
+    <view class="place"></view>
+    <text class="goodsnametext">合计：{{checknumber}}</text>
+    <view class="inshelvesanniu" bindtap="Toshelveinpath">
+      <text class="inshelvesanniutext">商品上架</text>
+    </view>
+    <view class="ddd"></view>
+  </view>
+  <view class="goodsoutware">
+    <view class="ddd"></view>
+    <image bindtap="Toinoutdetailpath" class="goodsoutwareimage" src="cloud://test-6gbfgwps390db2f7.7465-test-6gbfgwps390db2f7-1304095356/iconimage/明细.png"></image>
+    <text bindtap="Toinoutdetailpath" class="goodsnametext">出入库明细</text>
+    <view class="lastplace"></view>
+    <view class="outwareanniu" bindtap="Togooodsoutpath">
+      <text class="inshelvesanniutext">出库</text>
+    </view>
+    <view class="inwareanniu" bindtap="Togooodsinpath">
+      <text class="inshelvesanniutext">入库</text>
+    </view>
+    <view class="ddd"></view>
+  </view>
+</view>
+<view class="toppage" hidden="{{!toppage}}">
+  <form catchsubmit="editnumber">
+  <view class="windows">
+    <view class="qux">
+      <text class="quxtext">-{{goodname}}</text>
+      <image bindtap="quxi" class="quximage" src="cloud://test-6gbfgwps390db2f7.7465-test-6gbfgwps390db2f7-1304095356/iconimage/删除.png"></image>
+    </view>
+    <view class="xian"></view>
+    <view class="aaa"></view>
+      <view class="numdata">
+        <text class="quxtext">数量：</text>
+          <input class="numberinput" value="{{goodnumber}}" type="number" confirm-type="done" placeholder="输入数量" placeholder-style="font-size: 20rpx" name="newnumber"/>
+      </view>
+      <view class="aaa"></view>
+      <button class="yesbutton" type="primary" formType="submit">确定修改</button>
+  </view>
+</form>
+</view>

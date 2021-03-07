@@ -1,0 +1,128 @@
+/* pages/shelveout_del/shelveout_del.wxss */
+.title{
+  top: 0;
+  width: 100%;
+  height: 200rpx;
+  position: fixed;
+  display: flex;
+  background-color: #ffffff;
+  z-index: 5;
+  flex-direction: column;
+  box-shadow: 0rpx 2rpx 10rpx 2rpx #b8b8b8;
+}
+.ware {
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  justify-items: space-between;
+  align-items: center;
+  margin: 20rpx;
+}
+.ware_ {
+  width: 250rpx;
+  height: 30rpx;
+  display: flex;
+  flex-direction: column;
+}
+.logpage {
+  height: 30rpx;
+  display: flex;
+  flex-direction: column;
+}
+.warename {
+  font-size: 20rpx;
+  font-weight: 400;
+}
+.outlog {
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20rpx;
+}
+.inputpage_ {
+  width: 400rpx;
+  height: 50rpx;
+  flex-direction: row;
+  justify-items: space-between;
+  align-items: center;
+  border-bottom-style: solid;
+  border-bottom-width: 1rpx;
+  border-bottom-color: #c9c9c9;
+}
+.inputpage {
+  width: 400rpx;
+  height: 25rpx;
+  margin: 5rpx;
+}
+.aaa {
+  width: 100%;
+  height: 300rpx;
+}
+.goodspage {
+  height: 150rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0rpx 0rpx 10rpx 2rpx #ebebebde;
+  margin: 20rpx 0;
+}
+.goodimage {
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 10rpx;
+  border: 2rpx solid #dddde0;
+  margin: 0 20rpx;
+}
+.datapage {
+  height: 100%;
+  width: 200rpx;
+  margin: 0 5rpx;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.goodname {
+  font-size: 25rpx;
+  font-weight: 500;
+}
+.goodnumber {
+  font-size: 20rpx;
+  font-weight: 300;
+}
+.choose {
+  height: 100%;
+  width: 200rpx;
+  margin: 0 5rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.fimage {
+  width: 50rpx;
+  height: 50rpx;
+}
+.inputnumber {
+  width: 60rpx;
+  height: 30rpx;
+  text-align: center;
+}
+.anniu {
+  width: 100%;
+  margin: 20rpx 0;
+  display: flex;
+  position: fixed;
+  z-index: 5;
+  justify-content: space-around;
+  align-items: center;
+  bottom: 0;
+}
+.outgoods {
+  width: 70%;
+  height: 80%;
+}

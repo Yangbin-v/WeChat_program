@@ -1,0 +1,68 @@
+<!--pages/addinventory/addinventory.wxml-->
+<view class="title">
+  <picker mode="multiSelector" bindchange="bindPickerChange"   
+    bindcolumnchange="bindPickerColumnChange" 
+    value="{{customIndex}}" range="{{array}}" class="inputpage">
+    <view class="qqq">
+    <text class="t2">选择货架</text>
+    <text class="t1">▼</text>
+    <text class="t1">{{inregion}}-{{inshelve}}</text>
+  </view>
+  </picker>
+</view>
+<view class="bbb"></view>
+<view wx:for="{{goods}}" wx:for-item="i" wx:key="this">
+  <view class="goodspage">
+    <view class="ddd"></view>
+    <view class="ddd"></view>
+    <image class="goodsimage" src="{{i.url}}"></image>
+    <view class="goodsdata">
+      <view class="goodsname">
+        <text class="goodsnametext">{{i.name}}</text>
+      </view>
+      <view class="goodsprice">
+        <text class="goodspricetext">当前数量：{{i.nownumber}}</text>
+      </view>
+    </view>
+    <view class="goodsdata_">
+      <view class="goodsname">
+        <text class="goodsnametext">种类：{{i.category}}</text>
+      </view>
+    </view>
+    <view class="goodsdata_">
+      <view class="goodsname">
+        <text class="goodsnametext">盘点：</text>
+        <input class="inputnumber" bindinput="inputchange" maxlength="3" data-flag="{{i}}" type="number" placeholder="盘点数量" value="{{i.nownumber}}"/>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{goods.length}}">
+  <view class="notice">
+      <text class="noticetext">~我是有底线的~</text>
+  </view>
+  <view class="notice"></view>
+  <view class="noteinput">
+    <text class="goodsnametext">备注</text>
+    <input class="input" bindinput="inputlog" placeholder="  请输入备注" style="font-size: 20rpx; " />
+  </view>
+</view>
+<view class="bbb"></view>
+<view class="nogoods" wx:if="{{!goods.length}}">
+  <image class="nogoodsimage" src="cloud://test-6gbfgwps390db2f7.7465-test-6gbfgwps390db2f7-1304095356/iconimage/搜索无结果.png"/>
+  <text class="nogoodstext">无商品 请添加</text>
+  <view class="addgoodsanniu" bindtap="Toshelvepath">
+      <text class="addgoodsanniutext">添加商品</text>
+    </view>
+</view>
+<view class="operation">
+  <view class="goodsinshelves">
+    <view class="ddd"></view>
+    <text class="goodsnametext">合计：{{goodnumber}}</text>
+    <view class="place"></view>
+    <view class="ddd"></view>
+    <view class="delshelvesanniu" bindtap="updata">
+      <text class="inshelvesanniutext">盘点</text>
+    </view>
+  </view>
+</view>

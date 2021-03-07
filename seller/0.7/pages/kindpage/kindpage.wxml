@@ -1,0 +1,29 @@
+<!--pages/kindpage/kindpage.wxml-->
+<view wx:if="{{!goods.length}}">本分类无商品，请添加！</view>
+<view wx:for="{{goods}}" wx:for-item="i" wx:key="this">
+  <view class="goodspage">
+    <view class="aaa"></view>
+    <image class="goodsimage" src="{{i.url}}"></image>
+    <view class="goodsdata">
+      <view class="goodsname">
+        <text class="goodsnametext">{{i.name}}</text>
+      </view>
+      <view class="goodsprice">
+        <text class="goodspricetext">成本价：￥{{i.price}}</text>
+      </view>
+    </view>
+    <view class="goodsdata_">
+      <view class="goodsname">
+        <text class="goodsnametext">种类：{{i.category}}</text>
+      </view>
+    </view>
+    <view class="editor">
+      <view class="button" bindtap="toeditgood" data-edgood="{{i}}">
+        <text class="buttontext">编辑</text>
+      </view>
+    </view>
+    </view>
+</view>
+<view class="notice">
+      <text class="noticetext">~我是有底线的~</text>
+</view>

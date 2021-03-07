@@ -1,0 +1,64 @@
+<!--pages/shelveout/shelveout.wxml-->
+<view class="title">
+  <picker mode="multiSelector" bindchange="bindPickerChange"   
+    bindcolumnchange="bindPickerColumnChange" 
+    value="{{customIndex}}" range="{{array}}" class="inputpage">
+    <view class="qqq">
+    <text class="t2">选择货架</text>
+    <text class="t1">▼</text>
+    <text class="t1">{{inregion}}-{{inshelve}}</text>
+  </view>
+  </picker>
+</view>
+<view class="bbb"></view>
+<view wx:for="{{goods}}" wx:for-item="i" wx:key="this">
+  <view class="goodspage">
+    <view class="select">
+      <checkbox-group class="checkcss" bindchange="checkchange" data-post="{{i}}">
+        <checkbox value="cb" checked="{{Ischeck}}" />
+      </checkbox-group>
+    </view>
+    <image class="goodsimage" src="{{i.url}}"></image>
+    <view class="goodsdata">
+      <view class="goodsname">
+        <text class="goodsnametext">{{i.name}}</text>
+      </view>
+      <view class="goodsprice">
+        <text class="goodspricetext">成本价：￥{{i.price}}</text>
+        <text class="goodspricetext">销售价：￥{{i.buy}}</text>
+        <text class="goodspricetext">数量：{{i.nownumber}}</text>
+      </view>
+    </view>
+    <view class="goodsdata_">
+      <view class="goodsname">
+        <text class="goodsnametext">种类：{{i.category}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="bbb"></view>
+<view class="nogoods" wx:if="{{!goods.length}}">
+  <image class="nogoodsimage" src="cloud://test-6gbfgwps390db2f7.7465-test-6gbfgwps390db2f7-1304095356/iconimage/搜索无结果.png"/>
+  <text class="nogoodstext">无商品 请添加</text>
+  <view class="addgoodsanniu" bindtap="Toshelvepath">
+      <text class="addgoodsanniutext">添加商品</text>
+    </view>
+</view>
+<view class="operation">
+  <view class="goodsinshelves">
+    <view class="ddd"></view>
+    <checkbox value="quanxuna" checked="{{ischeckall}}" bindtap="checkall"/>
+    <text class="buttontext">全选</text>
+    <view class="place"></view>
+    <text class="goodsnametext">合计：{{checknumber}}</text>
+    <view class="ddd"></view>
+    <view class="delshelvesanniu" bindtap="Toshelvedel_path">
+      <text class="inshelvesanniutext">删除商品</text>
+    </view>
+    <view class="ddd"></view>
+    <view class="inshelvesanniu" bindtap="Toshelveout_path">
+      <text class="inshelvesanniutext">商品下架</text>
+    </view>
+    <view class="ddd"></view>
+  </view>
+</view>
