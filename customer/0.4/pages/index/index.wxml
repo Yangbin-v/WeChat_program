@@ -1,0 +1,43 @@
+<view wx:if="{{isHide}}">
+  <view class="shelve">
+          <image class="shelve-image" src="/images/货架扫码.png"></image>
+          <view class="shelve-text">1.扫描货架二维码</view>
+          <view class="shelve-text">2.选择商品</view>
+          <view class="shelve-text">3.付款</view>
+          <view  wx:if="{{!userInfo}}">
+              <button class="shelve-button" open-type="getUserInfo" bindgetuserinfo="onGotUserInfo">扫描货架二维码</button>
+          </view>
+          <view wx:else="" class="flex-container">
+            <button class="shelve-button" bindtap='scancode'>扫描货架二维码</button>
+          </view>
+  </view>
+</view>
+<view wx:else>
+  <view class="shelve-page">
+<view class="search">
+  <view class="searchpage">
+    <image class="searchimage" src="cloud://test-6gbfgwps390db2f7.7465-test-6gbfgwps390db2f7-1304095356/iconimage/搜索.png"></image>
+    <input class="searchinput" bindinput="inputsearch" confirm-type="search" placeholder="搜索商品或条形码" placeholder-style="font-size: 20rpx"/>
+    <image class="delete" src="/images/delete.png" wx:if="{{inputvalue}}" bindtap="delete"></image>
+    <image class="scan" src="cloud://test-6gbfgwps390db2f7.7465-test-6gbfgwps390db2f7-1304095356/iconimage/条码扫描.png" bindtap="phonescan"></image>
+  </view>
+</view>
+<view class="goods-page">
+  <view class="left">
+      <view wx:for="{{kinds}}" wx:key="{{item._id}}" data-id="{{item._id}}" id="z{{item._id}}" bindtap='click' class="barName {{curId == item._id ? 'active': ''}}">
+        <text>{{item.name}}</text>
+      </view>
+  </view>
+  <view class="right">
+    <view class="categoryItem" wx:for="{{goods}}" wx:for-item="i" wx:key="this" data-goods="{{i._id}}">
+    <image class="productImg" src="{{i.url}}"></image>
+    <view class="product">
+    <text class='productName'>{{i.name}}</text>
+      <text class="price">¥ {{i.buy}}</text>
+      </view>
+      <image class="addCartImg" src="/images/shop_addCart.png" catchtap="onAddCart" data-carts="{{i}}"></image>
+    </view>
+  </view>
+</view>
+  </view>
+</view>
