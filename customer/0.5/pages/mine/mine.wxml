@@ -1,0 +1,32 @@
+<!--pages/first/first.wxml-->
+<view>
+        <view  wx:if="{{!userInfo}}" class="flex-container">
+            <image class="UserHeadImage" src="/images/用户.png"></image>
+            <button type="primary"  open-type="getUserInfo" bindgetuserinfo="onGotUserInfo">授权登录</button>
+        </view>
+        <view wx:else="" class="flex-container">
+            <image class="UserHeadImage" src="{{userInfo.avatarUrl}}"></image>
+            <view class="user-name">{{userInfo.nickName}}</view>
+        </view>
+    <view class="line"></view>
+    <view class="Op-container" bindtap="Toorders">
+        <image class="Op-image" src="/images/订单.png"></image>
+        <view class="Order">我的订单</view>
+    </view>
+    <view class="line"></view>
+    <view class="Op-container" bindtap="Todiscount">
+        <image class="Op-image" src="/images/优惠券.png"></image>
+        <view class="Order">我的优惠券</view>
+    </view>
+    <view class="line"></view>
+    <view class="Op-container" bindtap="Tosupplement">
+        <image class="Op-image" src="/images/补货单.png"></image>
+        <view class="Order">我的补货单</view>
+    </view>
+    <view class="line"></view>
+    <view class="Op-container" bindtap="Toservice">
+        <image class="Op-image" src="/images/联系客服.png"></image>
+        <view class="Order">联系客服</view>
+    </view>
+    <view class="line"></view>
+</view>

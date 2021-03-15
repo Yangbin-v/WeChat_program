@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/cart/cart",
+    "pages/index/index",
+    "pages/mine/mine",
+    "pages/mine/my-discount/my-discount",
+    "pages/mine/my-orders/my-orders",
+    "pages/mine/my-service/my-service",
+    "pages/mine/my-supplement/my-supplement",
+    "pages/pay/pay"
+  ],
+  "entryPagePath": "pages/index/index",
+  "window": {
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#FFFFFF",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FF4500",
+    "navigationBarTitleText": "零食小铺",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "购买",
+        "iconPath": "images/购买_no.png",
+        "selectedIconPath": "images/购买_ing.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "images/购物车_no.png",
+        "selectedIconPath": "images/购物车_ing.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "个人中心",
+        "iconPath": "images/我的_no.png",
+        "selectedIconPath": "images/我的_ing.png"
+      }
+    ],
+    "color": "#000000",
+    "selectedColor": "#FF0000"
+  },
+  "sitemapLocation": "sitemap.json"
+}
