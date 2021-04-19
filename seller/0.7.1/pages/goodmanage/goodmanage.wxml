@@ -1,0 +1,109 @@
+<!--pages/goodmanage/goodmanage.wxml-->
+<view wx:if="{{pageflag}}">
+  <view class="title">
+    <view class="qqq" bindtap="switchpage1"><text class="t1">>全部商品</text></view>
+    <view class="qqq" bindtap="switchpage2"><text class="t2">商品分类</text></view>
+  </view>
+</view>
+<view wx:else>
+  <view class="title">
+    <view class="qqq" bindtap="switchpage1"><text class="t2">全部商品</text></view>
+    <view class="qqq" bindtap="switchpage2"><text class="t1">>商品分类</text></view>
+  </view>
+</view>
+<view wx:if="{{pageflag}}">
+  <view class="search">
+  <view class="searchpage">
+    <image class="searchimage" src="cloud://test-6gbfgwps390db2f7.7465-test-6gbfgwps390db2f7-1304095356/iconimage/搜索.png"></image>
+    <input class="searchinput" bindinput="inputsearch" confirm-type="search" placeholder="搜索商品或条形码" placeholder-style="font-size: 20rpx"/>
+    <image class="delete" src="/images/delete.png" wx:if="{{inputvalue}}" bindtap="delete"></image>
+    <image class="scan" src="cloud://test-6gbfgwps390db2f7.7465-test-6gbfgwps390db2f7-1304095356/iconimage/条码扫描.png" bindtap="phonescan"></image>
+  </view>
+</view>
+<view class="ccc"></view>
+<view wx:for="{{goods}}" wx:for-item="i" wx:key="this">
+  <view class="goodspage">
+    <view class="aaa"></view>
+    <image class="goodsimage" src="{{i.url}}"></image>
+    <view class="goodsdata">
+      <view class="goodsname">
+        <text class="goodsnametext">{{i.name}}</text>
+      </view>
+      <view class="goodsprice">
+        <text class="goodspricetext">成本价：￥{{i.price}}</text>
+        <text class="goodspricetext">销售价：￥{{i.buy}}</text>
+      </view>
+    </view>
+    <view class="goodsdata_">
+      <view class="goodsname">
+        <text class="goodsnametext">种类：{{i.category}}</text>
+      </view>
+    </view>
+    <view class="editor">
+      <view class="button" bindtap="toeditgood" data-edgood="{{i}}">
+        <text class="buttontext">编辑</text>
+      </view>
+    </view>
+    </view>
+</view>
+<view class="notice">
+      <text class="noticetext">~我是有底线的~</text>
+</view>
+<view class="ccc"></view>
+<view class="anniu">
+  <button class="addware" type="primary" bindtap="Toaddgood">添加新商品</button>
+</view>
+</view>
+<view wx:else>
+  <view class="ddd"></view>
+  <view wx:for="{{kinds}}" wx:for-item="i" wx:key="this">
+    <view class="kindpage">
+      <view class="aaa"></view>
+      <view class="aaa"></view>
+      <text class="kindname">{{i.name}}</text>
+      <view class="aaa"></view>
+      <image bindtap="deletepage" data-delekind="{{i}}" class="_delete" src="cloud://test-6gbfgwps390db2f7.7465-test-6gbfgwps390db2f7-1304095356/iconimage/删去.png"></image>
+      <view class="kinddata" bindtap="Tokindpage" data-post="{{i}}">
+        <image class="jian" src="cloud://test-6gbfgwps390db2f7.7465-test-6gbfgwps390db2f7-1304095356/iconimage/箭头.png"></image>
+      </view>
+      <view class="aaa"></view>
+    </view>
+  </view>
+  <view class="ccc"></view>
+  <view class="anniu">
+    <button class="addware" type="primary" bindtap="ftoppage">添加分类</button>
+  </view>
+</view>
+<view class="toppage" hidden="{{!toppage}}">
+  <form catchsubmit="addkindpage">
+  <view class="windows">
+    <view class="qux">
+      <text class="quxtext">-增加分类</text>
+      <image bindtap="quxi" class="quximage" src="cloud://test-6gbfgwps390db2f7.7465-test-6gbfgwps390db2f7-1304095356/iconimage/删除.png"></image>
+    </view>
+    <view class="xian"></view>
+    <view class="bbb"></view>
+      <view class="numdata">
+        <text class="quxtext">名称：</text>
+          <input class="numberinput" type="text" confirm-type="done" placeholder="输入名称" placeholder-style="font-size: 20rpx" name="kind"/>
+      </view>
+      <view class="bbb"></view>
+      <button class="yesbutton" type="primary" formType="submit">确定增加</button>
+  </view>
+</form>
+</view>
+<view class="toppage" hidden="{{!kindpage}}">
+  <view class="windows">
+    <view class="qux">
+      <text class="quxtext">-增加分类</text>
+      <image bindtap="quxi" class="quximage" src="cloud://test-6gbfgwps390db2f7.7465-test-6gbfgwps390db2f7-1304095356/iconimage/删除.png"></image>
+    </view>
+    <view class="xian"></view>
+    <view class="bbb"></view>
+      <view class="numdata">
+        <text class="quxtext">删除所有种类为{{del_kind.name}}的商品?</text>
+      </view>
+      <view class="bbb"></view>
+      <button class="yesbutton" type="primary" bindtap="deletekind">确定</button>
+  </view>
+</view>

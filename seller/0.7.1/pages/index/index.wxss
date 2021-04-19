@@ -1,0 +1,357 @@
+/**index.wxss**/
+.page {
+  width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.header {
+  display: flex;
+	flex-direction: column;
+  width: 100%;
+	height: 300rpx;
+	position: relative;
+  background-color: #FF3030;
+}
+.user-frame{
+  width: 150rpx;
+  height: 150rpx;
+  display:flex;
+  left:300.2rpx;
+  position: relative;
+}
+.userhead_frame{
+  width: 150rpx;
+  height: 150rpx;
+  position: absolute;
+}
+.userinfo-avatar {
+  width: 120rpx;
+  height: 120rpx;
+  margin: 10rpx;
+  border-radius: 50%;
+}
+.user-name {
+  width: 100%;
+  display: flex;
+	flex-direction: column;
+  height: 40rpx;
+}
+.userinfo-nickname {
+  font-size: 30rpx;
+  color: #000000;
+  text-align: center;
+}
+
+.gif-wave{
+  position: absolute;
+	width: 100%;
+	bottom: 0rpx;
+	left: 0;
+	z-index: 99;
+	mix-blend-mode: screen;
+	height: 80rpx;   
+}
+
+.ware-title {
+  width: 100%;
+  height: 30rpx;
+  margin: 10rpx 0rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+.warehouse {
+  font-size: 25rpx;
+  color: #000000;
+}
+.ware-page {
+  width: 100%;
+  height: 200rpx;
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+}
+.ware-page1 {
+  width: 250rpx; 
+  height: 200rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+.ware-image1 {
+  width: 120rpx;
+  height:120rpx;
+}
+.ware-admin {
+  font-size: 25rpx;
+  font-weight: 600;
+  color: #000000;
+}
+.ware-page2 {
+  width: 250rpx;
+  height: 200rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+.ware-image2 {
+  width: 120rpx;
+  height:120rpx;
+}
+.ware-in-out {
+  font-size: 25rpx;
+  font-weight: 600;
+  color: #000000;
+}
+.line-one {
+  width: 100%;
+  height: 2rpx;
+  background-color: #E0E3DA;
+}
+.goods-title {
+  width: 100%;
+  height: 30rpx;
+  margin: 10rpx 0rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+.goods {
+  font-size: 25rpx;
+  color: #000000;
+}
+.goods-page-one {
+  width: 100%;
+  height: 200rpx;
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+}
+.goods-page1 {
+  width: 250rpx; 
+  height: 200rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+.goods-image1 {
+  width: 120rpx;
+  height:120rpx;
+}
+.goods-admin {
+  font-size: 25rpx;
+  font-weight: 600;
+  color: #000000;
+}
+.goods-page2 {
+  width: 250rpx;
+  height: 200rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+.goods-image2 {
+  width: 120rpx;
+  height:120rpx;
+}
+.goods-in-out {
+  font-size: 25rpx;
+  font-weight: 600;
+  color: #000000;
+}
+.goods-page3 {
+  width: 250rpx;
+  height: 200rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+.goods-image3 {
+  width: 120rpx;
+  height:120rpx;
+}
+.goods-add {
+  font-size: 25rpx;
+  font-weight: 600;
+  color: #000000;
+}
+.goods-page-two {
+  width: 100%;
+  height: 200rpx;
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+}
+.goods-page4 {
+  width: 250rpx; 
+  height: 200rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+.goods-image4 {
+  width: 120rpx;
+  height:120rpx;
+}
+.goods-stock {
+  font-size: 25rpx;
+  font-weight: 600;
+  color: #000000;
+}
+.goods-page5 {
+  width: 250rpx;
+  height: 200rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+.goods-image5 {
+  width: 120rpx;
+  height:120rpx;
+}
+.goods-off {
+  font-size: 25rpx;
+  font-weight: 600;
+  color: #000000;
+}
+.goods-page6 {
+  width: 250rpx;
+  height: 200rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+.goods-image6 {
+  width: 120rpx;
+  height:120rpx;
+}
+.goods-check {
+  font-size: 25rpx;
+  font-weight: 600;
+  color: #000000;
+}
+.line-two {
+  width: 100%;
+  height: 2rpx;
+  background-color: #E0E3DA;
+}
+.welfare-title {
+  width: 100%;
+  height: 30rpx;
+  margin: 10rpx 0rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+.welfare {
+  font-size: 25rpx;
+  color: #000000;
+}
+.welfare-page-one {
+  width: 100%;
+  height: 200rpx;
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+}
+.welfare-page1 {
+  width: 250rpx; 
+  height: 200rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+.welfare-image1 {
+  width: 120rpx;
+  height:120rpx;
+}
+.welfare-member {
+  font-size: 25rpx;
+  font-weight: 600;
+  color: #000000;
+}
+.welfare-page2 {
+  width: 250rpx;
+  height: 200rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+.welfare-image2 {
+  width: 120rpx;
+  height:120rpx;
+}
+.welfare-coupon {
+  font-size: 25rpx;
+  font-weight: 600;
+  color: #000000;
+}
+.welfare-page3 {
+  width: 250rpx;
+  height: 200rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+.welfare-image3 {
+  width: 120rpx;
+  height:120rpx;
+}
+.welfare-recharge {
+  font-size: 25rpx;
+  font-weight: 600;
+  color: #000000;
+}
+.welfare-page-two {
+  width: 100%;
+  height: 200rpx;
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+}
+.notice {
+  width: 100%;
+  height: 50rpx;
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  align-items: center;
+  justify-content: center;
+}
+.noticetext {
+  font-size: 20rpx;
+  font-weight: 200;
+}
+.mylogo {
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 50%;
+}

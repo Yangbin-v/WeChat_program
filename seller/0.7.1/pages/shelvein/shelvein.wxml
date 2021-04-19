@@ -1,0 +1,41 @@
+<!--pages/shelvein/shelvein.wxml-->
+<view class="title">
+  <view class="ware">
+  <view class="ware_">
+    <text class="warename">仓库名称：{{ware.name}}</text>
+  </view>
+  </view>
+  <view class="outlog">
+  <view class="logpage">
+    <text class="warename">选择货架：</text>
+  </view>
+  <view class="inputpage_">
+    <picker mode="multiSelector" bindchange="bindPickerChange"   
+    bindcolumnchange="bindPickerColumnChange" 
+    value="{{customIndex}}" range="{{array}}" class="inputpage">-{{inregion}}-|-{{inshelve}}-</picker>
+  </view>
+  </view>
+</view>
+<view class="aaa"></view>
+<view wx:for="{{outgoods}}" wx:for-item="i" class="goodspage" wx:key="this">
+  <image class="goodimage" src="{{i.url}}"></image>
+  <view class="datapage">
+    <text class="goodname">{{i.name}}</text>
+    <text class="goodnumber">库存：{{i.ware[ware['_id']]}}</text>
+    <text class="goodnumber" >现存：{{i.nownumber}}</text>
+  </view>
+  <view class="datapage_">
+    <text class="goodnumber">成本：{{i.price}}</text>
+    <text class="goodnumber">销售：{{i.buy}}</text>
+  </view>
+  <view class="choose">
+    <text class="goodnumber">数量:</text>
+    <image bindtap="reduce" class="fimage" src="cloud://test-6gbfgwps390db2f7.7465-test-6gbfgwps390db2f7-1304095356/iconimage/减号.png" data-id="{{i}}"></image>
+    <input class="inputnumber" type="number" value="{{numbervaule[i['_id']]}}" bindinput="numberchnage" data-id="{{i}}"/>
+    <image bindtap="increase" class="fimage" src="cloud://test-6gbfgwps390db2f7.7465-test-6gbfgwps390db2f7-1304095356/iconimage/加号.png" data-id="{{i}}"></image>
+  </view>
+</view>
+<view class="aaa"></view>
+<view class="anniu">
+  <button class="outgoods" type="warn" bindtap="updata">点击提交</button>
+</view>

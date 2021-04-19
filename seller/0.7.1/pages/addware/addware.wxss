@@ -1,0 +1,84 @@
+/* pages/addware/addware.wxss */
+page {
+  background-color: #f2f2f7;
+}
+.page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.waredata {
+  width: 100%;
+  height: 200rpx;
+  display: flex;
+  flex-direction: column;
+  border-top: 40rpx solid #f2f2f7;
+  border-bottom: 40rpx solid #f2f2f7;
+}
+.line {
+  width: 100%;
+  height: 99rpx;
+  display: flex;
+  background-color: #ffffff;
+  border-bottom: 2rpx solid #f2f2f7;
+}
+.line-text {
+  width: 150rpx;
+  height: 99rpx;
+  display: flex;
+  align-items: center;
+}
+.must {
+  width: 30rpx;
+  height: 99rpx;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.must-text {
+  font-size: 30rpx;
+  font-weight: 300;
+  color: #ff0000;
+}
+.title-text {
+  font-size: 30rpx;
+  font-weight: 300;
+}
+.line-input {
+  width: 580rpx;
+  height: 99rpx;
+  margin: 0 10rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.wareman {
+  width: 100%;
+  height: 400rpx;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 40rpx solid #f2f2f7;
+}
+.start_no {
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  flex-direction: column;
+}
+.sentbutton {
+  margin-top: 40rpx;
+  width: 80%;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  color: #fff;
+  background: #20bd03;
+  }
+.line-switch {
+  width: 580rpx;
+  height: 99rpx;
+  margin: 0 10rpx;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}

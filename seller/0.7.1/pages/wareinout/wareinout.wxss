@@ -1,0 +1,341 @@
+/* pages/wareinout/wareinout.wxss */
+.name {
+  top: 0;
+  width: 100%;
+  height: 20rpx;
+  font-size: 15rpx;
+  font-weight: 200;
+  z-index: 10;
+  position: fixed;
+  background-color: #ffffff;
+}
+.search {
+  top: 20rpx;
+  height: 80rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  z-index: 10;
+  background-color: #ffffff;
+  justify-content: center;
+  align-items: center;
+}
+.searchpage {
+  height: 75rpx;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10rpx;
+  box-shadow: 0rpx 2rpx 10rpx -2rpx #afadad;
+  justify-content: space-around;
+  align-items: center;
+}
+.searchimage {
+  height: 30rpx;
+  width: 30rpx;
+}
+.searchinput {
+  height: 25rpx;
+  width: 500rpx;
+  
+}
+.delete {
+  height: 30rpx;
+  width: 30rpx;
+}
+.scan {
+  height: 60rpx;
+  width: 60rpx;
+}
+.title {
+  top: 100rpx;
+  height: 120rpx;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  background-color: #ffffff;
+  border-bottom: 1rpx solid #e2dede;
+  display: flex;
+  flex-direction: row;
+}
+.waretext {
+  height: 120rpx;
+  width: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.screen {
+  font-size: 30rpx;
+  font-weight: 300;
+}
+.goodspage {
+  height: 150rpx;
+  width: 100%;
+  border-bottom: 1rpx solid #e2e2e7;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.select {
+  height: 100%;
+  width: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.goodsimage {
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 10rpx;
+  border: 2rpx solid #dddde0;
+}
+.goodsdata{
+  height: 100%;
+  width: 180rpx;
+  margin: 0 20rpx;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.goodsname {
+  height: 50rpx;
+  width: 100%;
+}
+.goodsprice {
+  height: 70rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.goodsnametext {
+  font-size: 25rpx;
+  font-weight: 400;
+}
+.goodspricetext {
+  font-size: 18rpx;
+  font-weight: 200;
+}
+.goodsdata_ {
+  height: 100%;
+  width: 200rpx;
+  margin: 0 20rpx;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.editor {
+  height: 100%;
+  width: 100rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.checkcss {
+  width: 60rpx;
+  height: 60rpx;
+}
+.nogoods {
+  height: 500rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.nogoodsimage {
+  height: 200rpx;
+  width: 200rpx;
+}
+.nogoodstext {
+  font-size: 20rpx;
+  font-weight: 100;
+  margin: 20rpx;
+}
+.addgoodsanniu {
+  height: 70rpx;
+  width: 180rpx;
+  background-color: #e03e3e;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10rpx;
+  box-shadow: 0rpx 2rpx 10rpx -2rpx #db7c7c;
+}
+.addgoodsanniutext {
+  font-size: 25rpx;
+  font-weight: 300;
+  color: #fff;
+}
+.button {
+  height: 40rpx;
+  width: 80rpx;
+  display: flex;
+  border-radius: 20rpx;
+  border: 2rpx solid #e0e2e0;
+  justify-content: center;
+  align-items: center;
+}
+.buttontext {
+  font-size: 20rpx;
+  font-weight: 200;
+}
+.operation {
+  height: 220rpx;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0rpx 2rpx 10rpx -2rpx #afadad;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  align-items: center;
+  bottom: 0;
+}
+.ddd {
+  height: 100%;
+  width: 20rpx;
+}
+.goodsinshelves {
+  height: 110rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1rpx solid #e2e2e7;
+}
+.place {
+  height: 90rpx;
+  width: 300rpx;
+}
+.inshelvesanniu {
+  height: 60rpx;
+  width: 140rpx;
+  background-color: #09BB07;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5rpx;
+}
+.goodsoutware {
+  height: 110rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1rpx solid #e2e2e7;
+}
+.inshelvesanniutext {
+  font-size: 20rpx;
+  font-weight: 300;
+  color: #fff;
+}
+.lastplace {
+  height: 90rpx;
+  width: 200rpx;
+}
+.goodsoutwareimage {
+  height: 50rpx;
+  width: 50rpx;
+}
+.outwareanniu {
+  height: 60rpx;
+  width: 140rpx;
+  background-color: #e63205;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5rpx;
+}
+.inwareanniu {
+  height: 60rpx;
+  width: 140rpx;
+  background-color: #ecdd03;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5rpx;
+}
+.toppage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 15;
+}
+.windows {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  width: 60%;
+  padding: 15rpx;
+  border-radius: 10rpx;
+  background-color: #fbfbfd;
+  box-shadow: 0rpx 2rpx 10rpx -2rpx #e0dfdf;
+}
+.qux {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.xian {
+  width: 100%;
+  height: 2rpx;
+  background-color: rgb(199, 194, 194);
+}
+.aaa {
+  width: 100%;
+  height: 80rpx;
+}
+.numdata {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.quxtext {
+  font-size: 30rpx;
+  font-weight: 400;
+}
+.quximage {
+  width: 30rpx;
+  height: 30rpx;
+}
+.numberinput {
+  width: 150rpx;
+  height: 40rpx;
+  border-radius: 10rpx;
+  box-shadow: 0rpx 2rpx 10rpx -2rpx #a09e9e inset;
+  border:1rpx solid rgb(165, 161, 161);
+}
+.yesbutton {
+  width: 250rpx;
+}
+.bbb {
+  width: 100%;
+  height: 250rpx;
+}
+.notice {
+  width: 100%;
+  height: 20rpx;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+.noticetext {
+  font-size: 18rpx;
+  font-weight: 300;
+}
+

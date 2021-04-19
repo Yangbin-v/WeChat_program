@@ -1,0 +1,68 @@
+/* pages/shelves/shevlves.wxss */
+.page {
+  width:750rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+.shelvespage {
+  height: 375rpx;
+  width: 375rpx;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1rpx solid #e5e5eb;
+  justify-content: center;
+  align-items: center;
+}
+.wareimage {
+  height: 200rpx;
+  width: 200rpx;
+}
+.waretext {
+  height: 100rpx;
+  width: 350rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.name {
+  font-size: 20rpx;
+  font-weight: 700;
+}
+.addr {
+  font-size: 15rpx;
+  font-weight: 200;
+}
+.flag {
+  height: 50rpx;
+  width: 350rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flagno {
+  font-size: 20rpx;
+  font-weight: 400;
+  color: rgb(168, 0, 0);
+}
+.flaging {
+  font-size: 20rpx;
+  font-weight: 400;
+  color: rgb(6, 145, 1);
+}
+.anniu {
+  width: 100%;
+  margin: 20rpx 0;
+  display: flex;
+  position: fixed;
+  justify-content: space-around;
+  align-items: center;
+  bottom: 0;
+}
+.addware{
+  width: 60%;
+}
+.ccc {
+  height: 200rpx;
+  width: 100%;
+}

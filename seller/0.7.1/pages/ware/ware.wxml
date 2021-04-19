@@ -1,0 +1,18 @@
+<!--pages/ware/ware.wxml-->
+<view wx:for="{{wareresult}}" wx:for-item="i" wx:key="this" class="warepage" bindtap="Toeditpath" data-post="{{i}}">
+    <image src="{{iconurl[0]}}" class="wareimage"></image>
+    <view class="waretext">
+      <text class="name">{{i.name}}</text>
+      <text class="addr">{{i.addr}}</text>
+    </view>
+    <view class="flag">
+      <text wx:if="{{!i.flag}}" class="flagno">停用中</text>
+      <text wx:else class="flaging">启用中</text>
+      <image src="{{iconurl[1]}}" class="to"></image>
+    </view>
+</view>
+<view class="ccc"></view>
+<view class="anniu">
+  <button class="addware" type="primary" bindtap="Toaddpath">添加仓库</button>
+</view>
+

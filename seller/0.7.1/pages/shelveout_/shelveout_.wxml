@@ -1,0 +1,35 @@
+<!--pages/shelveout_/shelveout_.wxml-->
+<view class="title">
+  <view class="ware">
+  <view class="ware_">
+    <text class="warename">货架名称：{{shelve.region_name}}-{{shelve.name}}</text>
+  </view>
+  </view>
+  <view class="outlog">
+  <view class="logpage">
+    <text class="warename">下架备注：</text>
+  </view>
+  <view class="inputpage_">
+    <input class="inputpage" bindinput="outlog" confirm-type="done" placeholder="填写下架备注" placeholder-style="font-size: 20rpx;"/>
+  </view>
+  </view>
+</view>
+<view class="aaa"></view>
+<view wx:for="{{outgoods}}" wx:for-item="i" class="goodspage" wx:key="this">
+  <image class="goodimage" src="{{i.url}}"></image>
+  <view class="datapage">
+    <text class="goodname">{{i.name}}</text>
+    <text class="goodnumber">现存：{{i.nownumber}}</text>
+  </view>
+  <view class="choose">
+    <text class="goodnumber">数量:</text>
+    <image bindtap="reduce" class="fimage" src="cloud://test-6gbfgwps390db2f7.7465-test-6gbfgwps390db2f7-1304095356/iconimage/减号.png" data-id="{{i}}"></image>
+    <input class="inputnumber" type="number" value="{{numbervaule[i['_id']]}}" bindinput="numberchnage" data-id="{{i}}"/>
+    <image bindtap="increase" class="fimage" src="cloud://test-6gbfgwps390db2f7.7465-test-6gbfgwps390db2f7-1304095356/iconimage/加号.png" data-id="{{i}}"></image>
+  </view>
+</view>
+<view class="aaa"></view>
+<view class="anniu">
+  <button class="outgoods" type="warn" bindtap="updata">点击提交</button>
+</view>
+

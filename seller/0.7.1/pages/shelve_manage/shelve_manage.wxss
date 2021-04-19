@@ -1,0 +1,79 @@
+/* pages/staff_manage/staff_manage.wxss */
+.warepage {
+  height: 150rpx;
+  width: 100%;
+  border-bottom: 1rpx solid #e2e2e7;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.wareimage {
+  height: 120rpx;
+  width: 120rpx;
+}
+.waretext {
+  height: 150rpx;
+  width: 180rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.name {
+  font-size: 20rpx;
+  font-weight: 700;
+}
+.addr {
+  font-size: 18rpx;
+  font-weight: 200;
+}
+.flag {
+  height: 150rpx;
+  width: 450rpx;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.flagno {
+  font-size: 18rpx;
+  font-weight: 400;
+  color: rgb(168, 0, 0);
+}
+.flaging {
+  font-size: 18rpx;
+  font-weight: 400;
+  color: rgb(6, 145, 1);
+}
+.to {
+  height: 40rpx;
+  width: 40rpx;
+}
+.anniu {
+  width: 100%;
+  margin: 20rpx 0;
+  display: flex;
+  position: fixed;
+  justify-content: space-around;
+  align-items: center;
+  bottom: 0;
+}
+.addware {
+  width: 48%;
+}
+.ccc {
+  height: 200rpx;
+  width: 100%;
+}
+.notice {
+  width: 100%;
+  height: 20rpx;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+.noticetext {
+  font-size: 18rpx;
+  font-weight: 300;
+}
